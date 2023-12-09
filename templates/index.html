@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    body {
+        background-color: lightblue
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Чтобы форма отображалась по центру экрана */
+        margin: 0; /* Убираем отступы по умолчанию */
+       
+    }
+
+    form {
+        padding: 20px; 
+        background-color: lightyellow;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    input[type="float"], input[type="submit"] {
+        margin: 10px;
+        border-radius: 5px;
+        padding: 5px;
+        
+    }
+    </style>
+
+    <title>Веб-приложение</title>
+</head>
+<body>
+    <h1>Расчет целесообразности установки на объекте пьезоплитки</h1>
+    <form action="/result" method="post">
+        <label for="s_use">Площадь объекта (км²):</label>
+        <input type="text" id="s_use" name="s_use">
+        <br>
+        <label for="min_flights_pass">Пассажиропоток (чел/день):</label>
+        <input type="text" id="min_flights_pass" name="min_flights_pass">
+        <br>
+        <label for="price_kvatt_per_hour">Тариф (руб/кВт*ч):</label>
+        <input type="text" id="price_kvatt_per_hour" name="price_kvatt_per_hour">
+        <br>
+        <input type="submit" value="Рассчитать">
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Веб-приложение</title>
+    <style>
+        body {
+            background-color: lightyellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+        
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Результат:</h1>
+        <p>{{ message }}{{ result }} рублей в год.</p>
+    </div>
+</body>
+</html>
